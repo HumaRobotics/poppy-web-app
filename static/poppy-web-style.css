@@ -1,0 +1,28 @@
+body{
+margin:0;
+padding:0;
+}
+
+#poppymaindiv {
+font-family: Georgia;
+padding:2px 0px 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+background-color:#82C9ED;
+color:white;
+height:100%;
+font-size:1.2em;
+}
+
+
+#title{
+margin-left: auto;
+  margin-right: auto;
+  width:1000px;
+}
+
+a{
+font-weight: bold;
+color:#1F5F98;
+}
+

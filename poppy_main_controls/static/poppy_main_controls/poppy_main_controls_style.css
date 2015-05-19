@@ -1,0 +1,49 @@
+
+.row{
+
+	width:90%;
+	position:relative; 
+	height:auto;
+	overflow: auto;
+	padding-left: 5%;
+
+}
+
+.smallcontainer3{
+    color:#2F4F4F;
+	background-color:#E0EEEE;
+	width:30%;
+	float:left;
+	font-size:0.8em;
+	border-radius:7px;
+}
+
+.smallcontainer2{
+    color:#2F4F4F;
+
+	width:45%;
+	float:left;
+	
+}
+
+.height40 {
+	height:40%;
+	margin:3px;
+	padding:5px;
+	border: 1px solid grey;
+}
+
+.red{
+	background-color:red;
+}
+
+.green{
+	background-color:green;
+}
+
+.button {
+	background-color:#82C9ED;
+	color:#2F4F4F;
+	font-size:1em;
+	border-radius:5px;
+}

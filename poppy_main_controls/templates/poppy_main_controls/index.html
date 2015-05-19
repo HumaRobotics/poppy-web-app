@@ -1,0 +1,47 @@
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'poppy-web-style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'poppy_main_controls/poppy_main_controls_style.css' %}" />
+
+
+<!--
+<link rel="stylesheet" type="text/css" href="{% static 'basic_controls/poppy-web-style.css' %}" />
+<link rel="stylesheet" type="text/css" href="poppy-web-style.css" />-->
+<div id="poppymaindiv">
+
+<h1 id="title">Poppy Humanoid main controls</h1>
+
+<div class="row">
+<div class="smallcontainer3 height40">
+<h2>Quick controls</h2>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="compliant" name="compliant" class="button"/>
+</form>
+</div>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="not compliant" name="not compliant" class="button"/>
+</form>
+</div>
+<div style="clear: both;"></div>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="stand" name="stand" class="button"/>
+</form>
+</div>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="sit" name="sit" class="button"/>
+</form>
+</div>
+</div>
+
+</div>
+
+<p>{{other}}</p>
