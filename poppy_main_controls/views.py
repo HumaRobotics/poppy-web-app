@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from poppy_humanoid import PoppyHumanoid
+#~ from poppy_humanoid import PoppyHumanoid
 
 hasPoppy = False
 
