@@ -13,7 +13,8 @@
 <h1 id="title">Poppy Humanoid main controls</h1>
 
 <div class="row">
-<div class="smallcontainer3 height40">
+
+<!--<div class="smallcontainer3 height40">
 <h2>Quick controls</h2>
 <div class="smallcontainer2">
 <form action="{% url 'poppy_main_controls:index' %}" method="post">
@@ -40,8 +41,49 @@
 <input type="submit" value="sit" name="sit" class="button"/>
 </form>
 </div>
+</div>-->
+
+<div class="smallcontainer3 height40">
+<h2>Text to Speach</h2>
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+Enter some text here:
+<input type="text" value="" name="toSay" />
+<input type="submit" value="speak" name="speak" class="button"/>
+</form>
+<p>{{speakerror}}</p>
 </div>
 
+<!--<div class="smallcontainer3 height40">
+<h2>Start servers</h2>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+Ipython notebook server
+<input type="submit" value="{{notebookButton}}" name="notebook" class="button"/>
+</form>
+{{notebookText}}
 </div>
+<div class="smallcontainer2">
+Ipython notebook allows to see code, launch demos and even code yourself on the robot!
+</div>
+<div style="clear: both;"></div>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="stand" name="stand" class="button"/>
+</form>
+</div>
+<div class="smallcontainer2">
+<form action="{% url 'poppy_main_controls:index' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="sit" name="sit" class="button"/>
+</form>
+</div>
+</div>-->
+
+</div> <!-- of row -->
+
+</div> <!-- of main div -->
 
 <p>{{other}}</p>
